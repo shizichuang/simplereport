@@ -1,0 +1,33 @@
+package com.example.simplereport.common;
+
+import lombok.Data;
+
+import java.util.List;
+
+@Data
+public class BlockAreaContainer {
+    /**
+     * 从第几行开始便利
+     */
+    private int baseRowIndex;
+    /**
+     * 从第几列开始便利
+     */
+    private int baseColIndex;
+    /**
+     * 列与列之间的跨度为几个单元格
+     */
+    private int mergeColIndex;
+    /**
+     * 代码快数据
+     */
+    private List dataList;
+    /**
+     * 对象的名称
+     */
+    private String objectName;
+    /**
+     * 代码快数据
+     */
+    private List<ExcelSelectorContainer> selectorDtoList;
+}
